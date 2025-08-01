@@ -1,0 +1,83 @@
+$sidebar-width: 256px;
+$sidebar-bg: #1e293b;
+$sidebar-border: #334155;
+$primary-blue: #3b82f6;
+$primary-blue-dark: #2563eb;
+$text-primary: #111827;
+$text-secondary: #6b7280;
+$text-light: #9ca3af;
+$bg-white: #ffffff;
+$bg-gray: #f9fafb;
+$border-gray: #e5e7eb;
+$success-green: #10b981;
+$warning-orange: #f59e0b;
+$danger-red: #ef4444;
+$purple: #8b5cf6;
+
+.statusCards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+  margin-bottom: 24px;
+}
+
+.statusCard {
+  background-color: $bg-white;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  border: 1px solid $border-gray;
+  padding: 24px;
+  transition: all 0.2s ease;
+
+  &:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    transform: translateY(-2px);
+  }
+
+  &__content {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+
+  &__icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &--blue {
+      background-color: #dbeafe;
+      color: $primary-blue;
+    }
+
+    &--red {
+      background-color: #fee2e2;
+      color: $danger-red;
+    }
+
+    &--orange {
+      background-color: #fef3c7;
+      color: $warning-orange;
+    }
+
+    &--green {
+      background-color: #d1fae5;
+      color: $success-green;
+    }
+  }
+
+  &__label {
+    font-size: 14px;
+    color: $text-secondary;
+    margin-bottom: 4px;
+  }
+
+  &__value {
+    font-size: 24px;
+    font-weight: 700;
+    color: $text-primary;
+  }
+}
