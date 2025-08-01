@@ -40,7 +40,7 @@ const Metric = ({ label, value, unit, rep }) => {
                 className={styles.dot}
                 style={{
                   backgroundColor:
-                    Math.floor(value) >= i ? "purple" : hexToRgb("111111"),
+                    Math.floor(value) >= i ? "purple" : "#111111",
                 }}
               >
               </div>
