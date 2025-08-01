@@ -1,6 +1,5 @@
 import React from "react";
 import styles from "./metric.module.scss";
-import { hexToRgb, rgbToHex } from "@mui/material";
 
 const Metric = ({ label, value, unit, rep }) => {
   return (
