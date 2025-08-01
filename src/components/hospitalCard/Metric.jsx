@@ -24,7 +24,7 @@ const Metric = ({ label, value, unit, rep }) => {
                 className={styles.coin}
                 style={{
                   backgroundColor:
-                    Math.floor(value) >= i ? "lightgreen" : hexToRgb("111111"),
+                    Math.floor(value) >= i ? "lightgreen" : "#111111",
                 }}
               >
                 <div></div>
